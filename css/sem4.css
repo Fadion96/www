@@ -66,20 +66,17 @@ body{
   float:left;
   width: 50%;
   max-width: 200px;
-  border-top: 1px solid #021744;
-  border-left:1px solid #021744;
+
   border-right:1px solid #021744;
   background-color:#092D7A;
   height:100%
 }
 
 
-#menu > .submenu:first-child {
-  border-right: 0;
-}
 
 #menu > .submenu:hover {
   background-color:#466BBA;
+  transition: background-color 0.5s;
 }
 
 #menu > .submenu:hover > a {
@@ -88,6 +85,7 @@ body{
 
 #menu > .submenu:hover > ul {
   display:block;
+
 }
 #menu > .submenu > ul {
   display:none;
@@ -98,7 +96,8 @@ body{
 
 #menu > .submenu > ul > li {
   position:relative;
-  background-color:#1045B5
+  background-color:#1045B5;
+  transition: background-color 0.5s;
 }
 
 #menu > .submenu > ul > li > a {
@@ -111,6 +110,7 @@ body{
 
 #menu > .submenu > ul > li:hover > a {
   color:#FFD5B4;
+  transition: color 0.5s;
 }
 
 .course_detalis {
@@ -147,6 +147,7 @@ body{
 }
 #courses > .course:hover > a {
   color: #FFD5B4;
+  transition: color 0.5s;
 }
 
 #courses > .course {
@@ -173,10 +174,12 @@ body{
   width: auto;
   background-color:#092D7A;
   padding:0.5em ;
+  border-bottom: 1px solid #021744;
 }
 .coltitle-2 {
   width: auto;
   background-color:#B75100;
+  border-bottom: 1px solid #021744;
   padding:0.5em ;
 }
 
@@ -187,7 +190,7 @@ body{
 }
 
 [class*='col-'] {
-  border: 1px solid #000;
+  border: 1px solid #021744;
   /* background-color:#092D7A; */
   float: left;
   /* padding: 0 0.5em; */
@@ -242,11 +245,12 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0.5em 0em;
     cursor: pointer;
     font-family: Sans-Serif;
 }
 
 .button:hover {
   color: #FFD5B4;
+  transition: color 0.5s;
 }

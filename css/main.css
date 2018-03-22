@@ -12,7 +12,6 @@ body{
   padding:0 0.5em;
 }
 
-
 .head {
   width: auto;
   margin:1em auto 0em auto;
@@ -33,6 +32,14 @@ body{
 #subtitle {
   color: #fff;
   font-size: 2em;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  font-family: Sans-Serif;
+}
+
+#site {
+  color: #fff;
+  font-size: 1.5em;
   line-height: 1;
   font-family: Sans-Serif;
 }
@@ -59,20 +66,17 @@ body{
   float:left;
   width: 50%;
   max-width: 200px;
-  border-top: 1px solid #021744;
-  border-left:1px solid #021744;
+
   border-right:1px solid #021744;
   background-color:#092D7A;
   height:100%
 }
 
 
-#menu > .submenu:first-child {
-  border-right: 0;
-}
 
 #menu > .submenu:hover {
   background-color:#466BBA;
+  transition: background-color 0.5s;
 }
 
 #menu > .submenu:hover > a {
@@ -81,6 +85,7 @@ body{
 
 #menu > .submenu:hover > ul {
   display:block;
+
 }
 #menu > .submenu > ul {
   display:none;
@@ -92,6 +97,7 @@ body{
 #menu > .submenu > ul > li {
   position:relative;
   background-color:#1045B5;
+  transition: background-color 0.5s;
 }
 
 #menu > .submenu > ul > li > a {
@@ -104,6 +110,7 @@ body{
 
 #menu > .submenu > ul > li:hover > a {
   color:#FFD5B4;
+  transition: color 0.5s;
 }
 
 .information {
