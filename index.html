@@ -1,109 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
-    <meta charset="UTF-8">
-    <title>Wizytówka</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Asap:400,600&subset=latin-ext');
-
-      body {
-        background-color: rgb(240, 246, 255);
-        font-family: 'Asap', sans-serif;
-        font-size: 125%;
-      }
-
-      .container {
-        border: 1px solid #ccc;
-        margin: 4em auto 0 auto;
-        padding: 0 1em 1em;
-        background-color: rgb(202, 220, 247);
-        width: 70vw;
-      }
-
-      header {
-        font-size: 3rem;
-        padding: 1rem 0;
-        font-weight: 300;
-      }
-
-      .title {
-        font-size: 1.5rem;
-      }
-
-      .description {
-        border: 1px solid #ccc;
-        margin: 0.5rem 0;
-        background-color: rgb(255, 231, 197);
-        width: 100%;
-        height: 100%;
-      }
-
-      .description > p {
-        margin: 0;
-        padding: 1rem;
-      }
-
-      .details {
-        display: flex;
-        font-size: 1.3rem;
-      }
-
-      .details-section {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .details-section:first-child {
-        padding-right: 0.5rem;
-      }
-
-      .details-section:last-child {
-        padding-left: 0.5rem;
-      }
-
-    </style>
+    <meta charset="utf-8">
+    <title>Moje przygody z edukacją</title>
+    <meta name="description" content="Moje przygody z edukacją, oraz informacje na temat tego czym się interesuję">
+    <meta name="author" content="Krzysztof Nowak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='css/main.css' rel='stylesheet'>
   </head>
   <body>
     <div class="container">
-      <header>Jan Kowalski</header>
-      <div class="details">
-        <div class="details-section">
-            <div class="title">
-              Co robię?
-            </div>
-              <div class="description">
-                <p>
-                  Jestem studentem Informatyki WPPT.
-                </p>
-              </div>
-        </div>
-        <div class="details-section">
-            <div class="title">
-              Co lubię?
-            </div>
-              <div class="description">
-                <ul>
-                  <li>pływać</li>
-                  <li>czytać</li>
-                  <li>programować</li>
-                  <li>fotografować</li>
-                </ul>
-            </div>
-        </div>
-      </div>
-      <div class="address">
-        <div class="title">
-          Adres:
-        </div>
-        <div class="description">
+      <header class="head">
+        <div id="title">Krzysztof Nowak</div>
+  		  <div id="subtitle">Przygody z edukacją</div>
+      </header> <!-- head -->
+      <ol id="menu">
+        <li class="submenu"><a href="#">Moja edukacja</a>
+          <ul>
+            <li><a href="semestry/srednia.html">Szkoła średnia</a></li>
+            <li><a href="semestry/sem1.html">Studia semestr I</a></li>
+            <li><a href="semestry/sem2.html">Studia semestr II</a></li>
+            <li><a href="semestry/sem3.html">Studia semestr III</a></li>
+            <li><a href="semestry/sem4.html">Studia semestr IV</a></li>
+            <li><a href="semestry/sem5.html">Studia semestr V</a></li>
+            <li><a href="semestry/sem6.html">Studia semestr VI</a></li>
+          </ul>
+        </li> <!-- submenu -->
+        <li class="submenu"><a href="#">Moje hobby</a>
+          <ul>
+            <li><a href="hobby/pilka.html">Piłka nożna</a></li>
+            <li><a href="#">Kolarstwo</a></li>
+            <li><a href="#">Czytanie Książek</a></li>
+          </ul>
+        </li> <!-- submenu -->
+      </ol> <!-- menu -->
+      <div class="row">
+        <div class="information">
           <p>
-              Droga mleczna;
-              układ słoneczny (taka mała gwiazda klasy G2V w wewnętrznej części Ramienia Oriona); trzecia planeta od słonca;
-              kontentynent Europa
+            W roku 2015 ukończyłem szkołę średnią.
+            W tym samym roku rozpocząłem studiowanie informatyki na Wydziale Podstawowych Problemów Techniki Politechniki Wrocławkiej.
+            Podczas szkoły średniej nauczyłem się wiele przydatnych oraz interesujących rzeczy.
+            Natomiast w trakcie studiów pogłębiłem wiedzę z zakresu informatyki oraz matematyki.
           </p>
-        </div>
-      </div>
-    </div>
+        </div> <!-- info -->
+      </div> <!-- row -->
+    </div> <!-- container -->
   </body>
 </html>
